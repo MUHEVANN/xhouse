@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- remix icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="header container">
+      <nav class="nav">
+        <h1 class="logo"><span class="logo__color">XH</span>ouse</h1>
+        <div class="overlay__nav" id="nav-overlay"></div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link active" href="index.html">Home</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="">Ads</a></li>
+            <li class="nav__item"><a class="nav__link" href="">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Login</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Register</a></li>
+            <li class="nav__item">
+              <a class="nav__button" href="">+ Post an Ad</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <section class="home">
+        <div class="overlay__home"></div>
+        <div class="home__content container">
+          <div class="home__data">
+            <h1 class="home__title">Largest Classifieds In The World</h1>
+            <p class="home__description">
+              You can buy, sell anything you want.
+            </p>
+          </div>
+          <form action="" class="home__form grid">
+            <div class="input">
+              <input type="text" placeholder="what are you looking for?" />
+            </div>
+            <div class="input">
+              <input type="text" placeholder="location" />
+              <div class="container__icon-location">
+                <i class="ri-map-pin-2-fill"></i>
+              </div>
+            </div>
+            <div class="input">
+              <select name="" id="">
+                <option value="">All Category</option>
+                <option value="">Real Estate</option>
+                <option value="">Furnitur</option>
+                <option value="">Electronik</option>
+                <option value="">Cars</option>
+                <option value="">Others</option>
+              </select>
+            </div>
+            <div class="input">
+              <button type="button" class="search__button">Search</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="feature">
+        <div class="feature__container container">
+          <div class="feature__list grid">
+            <div class="feature__item">
+              <div class="feature__icon"><i class="ri-home-gear-line"></i></div>
+              <h2 class="feature__icon-title">Real Estate</h2>
+              <div class="feature__price">
+                <p class="feature__price-data">3,921</p>
+              </div>
+            </div>
+            <div class="feature__item">
+              <div class="feature__icon">
+                <i class="ri-git-repository-line"></i>
+              </div>
+              <h2 class="feature__icon-title">Book & Megazine</h2>
+              <div class="feature__price">
+                <p class="feature__price-data">621</p>
+              </div>
+            </div>
+            <div class="feature__item">
+              <div class="feature__icon">
+                <i class="ri-ancient-pavilion-fill"></i>
+              </div>
+              <h2 class="feature__icon-title">Furnitur</h2>
+              <div class="feature__price">
+                <p class="feature__price-data">1,259</p>
+              </div>
+            </div>
+            <div class="feature__item">
+              <div class="feature__icon">
+                <i class="ri-smartphone-line"></i>
+              </div>
+              <h2 class="feature__icon-title">Elektronik</h2>
+              <div class="feature__price">
+                <p class="feature__price-data">1,832</p>
+              </div>
+            </div>
+            <div class="feature__item">
+              <div class="feature__icon"><i class="ri-roadster-line"></i></div>
+              <h2 class="feature__icon-title">Cars</h2>
+              <div class="feature__price">
+                <p class="feature__price-data">521</p>
+              </div>
+            </div>
+            <div class="feature__item">
+              <div class="feature__icon">
+                <i class="ri-restaurant-2-line"></i>
+              </div>
+              <h2 class="feature__icon-title">Other</h2>
+              <div class="feature__price">
+                <p class="feature__price-data">198</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="feature__swiper-ads">Feature Ads</h3>
+          <div class="feature__swiper swiper" data-id="First">
+            <div class="feature__swiper-list grid swiper-wrapper">
+              <div class="feature__swiper-card swiper-slide">
+                <img src="public/img/house.jpg" alt="" />
+                <div class="feature__swiper-name-icon">
+                  <h4 class="feature__swiper-name">Real Estate</h4>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="feature__swiper-data">
+                  <div class="feature__swiper-title-description">
+                    <h2 class="feature__swiper-title">
+                      House With Swimming Pool
+                    </h2>
+                    <p class="feature__swiper-description">
+                      Don St, Brooklyn, New York
+                    </p>
+                  </div>
+
+                  <div class="feature__swiper-star">
+                    <div class="feature__swiper-star-list">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                    <div class="feature__swiper-review">(3 Review)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature__swiper-card swiper-slide">
+                <img src="public/img/furnitur.jpg" alt="" />
+                <div class="feature__swiper-name-icon">
+                  <h4 class="feature__swiper-name">Furnitur</h4>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="feature__swiper-data">
+                  <div class="feature__swiper-title-description">
+                    <h2 class="feature__swiper-title">Wooden Chair & Table</h2>
+                    <p class="feature__swiper-description">
+                      Don St, Brooklyn, New York
+                    </p>
+                  </div>
+
+                  <div class="feature__swiper-star">
+                    <div class="feature__swiper-star-list">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                    <div class="feature__swiper-review">(3 Review)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature__swiper-card swiper-slide">
+                <img src="public/img/ip.jpg" alt="" />
+                <div class="feature__swiper-name-icon">
+                  <h4 class="feature__swiper-name">Electronic</h4>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="feature__swiper-data">
+                  <div class="feature__swiper-title-description">
+                    <h2 class="feature__swiper-title">Iphone X Gray</h2>
+                    <p class="feature__swiper-description">
+                      Don St, Brooklyn, New York
+                    </p>
+                  </div>
+
+                  <div class="feature__swiper-star">
+                    <div class="feature__swiper-star-list">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill star__empty"></i>
+                    </div>
+                    <div class="feature__swiper-review">(3 Review)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature__swiper-card swiper-slide">
+                <img src="public/img/car.jpg" alt="" />
+                <div class="feature__swiper-name-icon">
+                  <h4 class="feature__swiper-name">Cars & Vehicle</h4>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="feature__swiper-data">
+                  <div class="feature__swiper-title-description">
+                    <h2 class="feature__swiper-title">Gray Luxury Car</h2>
+                    <p class="feature__swiper-description">
+                      Don St, Brooklyn, New York
+                    </p>
+                  </div>
+
+                  <div class="feature__swiper-star">
+                    <div class="feature__swiper-star-list">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill star__empty"></i>
+                    </div>
+                    <div class="feature__swiper-review">(3 Review)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature__swiper-card swiper-slide">
+                <img src="public/img/house.jpg" alt="" />
+                <div class="feature__swiper-name-icon">
+                  <h4 class="feature__swiper-name">Real Estate</h4>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="feature__swiper-data">
+                  <div class="feature__swiper-title-description">
+                    <h2 class="feature__swiper-title">
+                      House With Swimming Pool
+                    </h2>
+                    <p class="feature__swiper-description">
+                      Don St, Brooklyn, New York
+                    </p>
+                  </div>
+
+                  <div class="feature__swiper-star">
+                    <div class="feature__swiper-star-list">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                    <div class="feature__swiper-review">(3 Review)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature__swiper-card swiper-slide">
+                <img src="public/img/furnitur.jpg" alt="" />
+                <div class="feature__swiper-name-icon">
+                  <h4 class="feature__swiper-name">Furnitur</h4>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="feature__swiper-data">
+                  <div class="feature__swiper-title-description">
+                    <h2 class="feature__swiper-title">Wooden Chair & Table</h2>
+                    <p class="feature__swiper-description">
+                      Don St, Brooklyn, New York
+                    </p>
+                  </div>
+
+                  <div class="feature__swiper-star">
+                    <div class="feature__swiper-star-list">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                    <div class="feature__swiper-review">(3 Review)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature__swiper-card swiper-slide">
+                <img src="public/img/ip.jpg" alt="" />
+                <div class="feature__swiper-name-icon">
+                  <h4 class="feature__swiper-name">Electronic</h4>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="feature__swiper-data">
+                  <div class="feature__swiper-title-description">
+                    <h2 class="feature__swiper-title">Iphone X Gray</h2>
+                    <p class="feature__swiper-description">
+                      Don St, Brooklyn, New York
+                    </p>
+                  </div>
+
+                  <div class="feature__swiper-star">
+                    <div class="feature__swiper-star-list">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill star__empty"></i>
+                    </div>
+                    <div class="feature__swiper-review">(3 Review)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature__swiper-card swiper-slide">
+                <img src="public/img/car.jpg" alt="" />
+                <div class="feature__swiper-name-icon">
+                  <h4 class="feature__swiper-name">Cars & Vehicle</h4>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="feature__swiper-data">
+                  <div class="feature__swiper-title-description">
+                    <h2 class="feature__swiper-title">Gray Luxury Car</h2>
+                    <p class="feature__swiper-description">
+                      Don St, Brooklyn, New York
+                    </p>
+                  </div>
+
+                  <div class="feature__swiper-star">
+                    <div class="feature__swiper-star-list">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill star__empty"></i>
+                    </div>
+                    <div class="feature__swiper-review">(3 Review)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navigation__container">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="popular__container container">
+          <div class="popular__data">
+            <h2 class="popular__title">Popular Products</h2>
+            <p class="popular__description">Lorem Ipsum Dolor St Amet</p>
+            <div class="popular__line"></div>
+          </div>
+
+          <div class="popular__card-list grid">
+            <div class="popular__card-container">
+              <img src="public/img/car.jpg" alt="" loading="lazy" />
+              <div class="popular__card-data">
+                <div class="popular__card-button">
+                  <a href="#">Car & Vehicle</a>
+                </div>
+                <h3 class="popular__card-title">Red Luxury Car</h3>
+                <p class="popular__card-description">West Orange, New York</p>
+              </div>
+              <div class="popular__icon">
+                <i class="ri-heart-fill"></i>
+              </div>
+            </div>
+            <div class="popular__card-container">
+              <img src="public/img/house.jpg" alt="" />
+              <div class="popular__card-data">
+                <div class="popular__card-button">
+                  <a href="#" class="">Real Estate</a>
+                </div>
+                <h3 class="popular__card-title">House with Swimming Pool</h3>
+                <p class="popular__card-description">West Orange, New York</p>
+              </div>
+              <div class="popular__icon">
+                <i class="ri-heart-fill"></i>
+              </div>
+            </div>
+            <div class="popular__card-container">
+              <img src="public/img/furnitur.jpg" alt="" />
+              <div class="popular__card-data">
+                <div class="popular__card-button">
+                  <a href="#">Furniture</a>
+                </div>
+                <h3 class="popular__card-title">Wooden Chair & Table</h3>
+                <p class="popular__card-description">West Orange, New York</p>
+              </div>
+              <div class="popular__icon">
+                <i class="ri-heart-fill"></i>
+              </div>
+            </div>
+            <div class="popular__card-container">
+              <img src="public/img/ip.jpg" alt="" />
+              <div class="popular__card-data">
+                <div class="popular__card-button">
+                  <a href="#">Electronic</a>
+                </div>
+                <h3 class="popular__card-title">iPhone X gray</h3>
+                <p class="popular__card-description">West Orange, New York</p>
+              </div>
+              <div class="popular__icon">
+                <i class="ri-heart-fill"></i>
+              </div>
+            </div>
+            <div class="popular__card-container">
+              <img src="public/img/house.jpg" alt="" />
+              <div class="popular__card-data">
+                <div class="popular__card-button">
+                  <a href="#">Real Estate</a>
+                </div>
+                <h3 class="popular__card-title">House with Swimming Pool</h3>
+                <p class="popular__card-description">West Orange, New York</p>
+              </div>
+              <div class="popular__icon">
+                <i class="ri-heart-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trending">
+        <div class="container">
+          <h2 class="trending__title">Trending Today</h2>
+          <div class="trending__line"></div>
+          <div class="trending__card-list grid">
+            <div class="trending__card-container">
+              <img src="public/img/house.jpg" alt="" />
+              <div class="trending__data">
+                <div class="trending__cta">
+                  <div class="trending__button">Real Estate</div>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="trending__text">
+                  <div class="trending__title">
+                    <a href="">House with Swimming Pool</a>
+                  </div>
+                  <p class="trending__description">
+                    Don St, Brooklyn, New York
+                  </p>
+                </div>
+                <div class="feature__swiper-star">
+                  <div class="feature__swiper-star-list">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill star__empty"></i>
+                  </div>
+                  <div class="feature__swiper-review">(3 Review)</div>
+                </div>
+              </div>
+            </div>
+            <div class="trending__card-container">
+              <img src="public/img/car.jpg" alt="" />
+              <div class="trending__data">
+                <div class="trending__cta">
+                  <div class="trending__button">Cars & Vehicle</div>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="trending__text">
+                  <div class="trending__title">
+                    <a href="">Red Luxury Car</a>
+                  </div>
+                  <p class="trending__description">
+                    Don St, Brooklyn, New York
+                  </p>
+                </div>
+                <div class="feature__swiper-star">
+                  <div class="feature__swiper-star-list">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill star__empty"></i>
+                  </div>
+                  <div class="feature__swiper-review">(3 Review)</div>
+                </div>
+              </div>
+            </div>
+            <div class="trending__card-container">
+              <img src="public/img/furnitur.jpg" alt="" />
+              <div class="trending__data">
+                <div class="trending__cta">
+                  <div class="trending__button">Furniture</div>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="trending__text">
+                  <div class="trending__title">
+                    <a href="">Wooden Chair & Table</a>
+                  </div>
+                  <p class="trending__description">
+                    Don St, Brooklyn, New York
+                  </p>
+                </div>
+                <div class="feature__swiper-star">
+                  <div class="feature__swiper-star-list">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill star__empty"></i>
+                  </div>
+                  <div class="feature__swiper-review">(3 Review)</div>
+                </div>
+              </div>
+            </div>
+            <div class="trending__card-container">
+              <img src="public/img/house.jpg" alt="" />
+              <div class="trending__data">
+                <div class="trending__cta">
+                  <div class="trending__button">Real Estate</div>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="trending__text">
+                  <div class="trending__title">
+                    <a href="">House with Swimming Pool</a>
+                  </div>
+                  <p class="trending__description">
+                    Don St, Brooklyn, New York
+                  </p>
+                </div>
+                <div class="feature__swiper-star">
+                  <div class="feature__swiper-star-list">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill star__empty"></i>
+                  </div>
+                  <div class="feature__swiper-review">(3 Review)</div>
+                </div>
+              </div>
+            </div>
+            <div class="trending__card-container">
+              <img src="public/img/ip.jpg" alt="" />
+              <div class="trending__data">
+                <div class="trending__cta">
+                  <div class="trending__button">Electronic</div>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="trending__text">
+                  <div class="trending__title">
+                    <a href="">iPhone X gray </a>
+                  </div>
+                  <p class="trending__description">
+                    Don St, Brooklyn, New York
+                  </p>
+                </div>
+                <div class="feature__swiper-star">
+                  <div class="feature__swiper-star-list">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill star__empty"></i>
+                  </div>
+                  <div class="feature__swiper-review">(3 Review)</div>
+                </div>
+              </div>
+            </div>
+            <div class="trending__card-container">
+              <img src="public/img/furnitur.jpg" alt="" />
+              <div class="trending__data">
+                <div class="trending__cta">
+                  <div class="trending__button">Furniture</div>
+                  <div class="feature__swiper-icon">
+                    <i class="ri-heart-fill"></i>
+                  </div>
+                </div>
+                <div class="trending__text">
+                  <div class="trending__title">
+                    <a href="">Wooden Chair & Table</a>
+                  </div>
+                  <p class="trending__description">
+                    Don St, Brooklyn, New York
+                  </p>
+                </div>
+                <div class="feature__swiper-star">
+                  <div class="feature__swiper-star-list">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill star__empty"></i>
+                  </div>
+                  <div class="feature__swiper-review">(3 Review)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial">
+        <div class="testimonial__container container">
+          <div class="testimonial__title">
+            <h2>Testimonial</h2>
+            <div class="testimonial__line"></div>
+          </div>
+          <div class="testimonial__swiper swiper" data-id="Last">
+            <div class="testimonial__card-list grid swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial__card-container">
+                  <img src="public/img/person_2.jpg.webp" alt="" />
+                  <span>Richo</span>
+                  <p class="testimonial__description">
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+                    ipsum quaerat saepe! Ex quis dolores distinctio. In eos cum
+                    quo. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Hic animi aperiam et provident praesentium vitae
+                    doloremque veniam! A, reprehenderit repudiandae?"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card-container">
+                  <img src="public/img/person_3.jpg.webp" alt="" />
+                  <span>Richo</span>
+                  <p class="testimonial__description">
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+                    ipsum quaerat saepe! Ex quis dolores distinctio. In eos cum
+                    quo. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Hic animi aperiam et provident praesentium vitae
+                    doloremque veniam! A, reprehenderit repudiandae?"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card-container">
+                  <img src="public/img/person_4.jpg.webp" alt="" />
+                  <span>Richo</span>
+                  <p class="testimonial__description">
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+                    ipsum quaerat saepe! Ex quis dolores distinctio. In eos cum
+                    quo. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Hic animi aperiam et provident praesentium vitae
+                    doloremque veniam! A, reprehenderit repudiandae?"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial__card-container">
+                  <img src="public/img/person_5.jpg.webp" alt="" />
+                  <span>Richo</span>
+                  <p class="testimonial__description">
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+                    ipsum quaerat saepe! Ex quis dolores distinctio. In eos cum
+                    quo. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Hic animi aperiam et provident praesentium vitae
+                    doloremque veniam! A, reprehenderit repudiandae?"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="testi-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="testi-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="blog__container container">
+          <div class="blog__data">
+            <h2 class="blog__title">Our Blog</h2>
+            <p>See Our Daily News & Updates</p>
+            <div class="blog__line"></div>
+          </div>
+          <div class="blog__card-list grid">
+            <div class="blog__card-container">
+              <img src="public/img/hero_1.jpg.webp" alt="" />
+              <div class="blog__card-data">
+                <div class="blog__card-title">Many People Selling Online</div>
+                <div class="blog__card-subtitle">
+                  <span>by Mark Spiker</span>
+                  <ul>
+                    <li>Jan 18, 2024</li>
+                    <li class="blog__link"><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="blog__card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                eligendi nobis ea maiores sapiente veritatis reprehenderit
+                suscipit quaerat rerum voluptatibus a eius.
+              </p>
+            </div>
+            <div class="blog__card-container">
+              <img src="public/img/hero_1.jpg.webp" alt="" />
+              <div class="blog__card-data">
+                <div class="blog__card-title">Many People Selling Online</div>
+                <div class="blog__card-subtitle">
+                  <span>by Mark Spiker</span>
+                  <ul>
+                    <li>Jan 18, 2024</li>
+                    <li class="blog__link"><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="blog__card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                eligendi nobis ea maiores sapiente veritatis reprehenderit
+                suscipit quaerat rerum voluptatibus a eius.
+              </p>
+            </div>
+            <div class="blog__card-container">
+              <img src="public/img/hero_1.jpg.webp" alt="" />
+              <div class="blog__card-data">
+                <div class="blog__card-title">Many People Selling Online</div>
+                <div class="blog__card-subtitle">
+                  <span>by Mark Spiker</span>
+                  <ul>
+                    <li>Jan 18, 2024</li>
+                    <li class="blog__link"><a href="#">News</a></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="blog__card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                eligendi nobis ea maiores sapiente veritatis reprehenderit
+                suscipit quaerat rerum voluptatibus a eius.
+              </p>
+            </div>
+          </div>
+          <div class="blog__a-container">
+            <a href="" class="blog__a">View All Post</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="newslatter">
+        <div class="newslatter__container container">
+          <div class="newslatter__data">
+            <h3 class="newslatter__title">Newsletter</h3>
+            <p class="newslatter__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <form class="newslatter__form">
+            <input type="text" name="" placeholder="Email" id="" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer__container container">
+          <div class="footer__data grid">
+            <div class="footer__data-title">
+              <h4>About</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Provident rerum unde possimus molestias dolorem fuga, illo quis
+                fugiat!
+              </p>
+            </div>
+            <div class="footer__data-title">
+              <h4>Navigations</h4>
+              <ul class="footer__navigate">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Testimonials</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer__data-title">
+              <h4>Follow Us</h4>
+              <ul class="footer__social">
+                <li>
+                  <a href=""><i class="ri-facebook-line"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-twitter-x-line"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-instagram-line"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-linkedin-fill"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__data-form">
+              <form action="">
+                <input type="text" placeholder="Search Products..." />
+                <button>submit</button>
+              </form>
+            </div>
+          </div>
+          <hr />
+          <div class="footer__copy">
+            <span>Copyright ©2024 All rights reserved</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+    <!-- swiper -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  </body>
+</html>
