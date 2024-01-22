@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* html {
+} */
 
 body {
+  scroll-behavior: smooth;
   font-family: "Nanum Gothic", sans-serif;
 }
 img {
@@ -66,7 +66,7 @@ a {
   top: 20px;
   left: 50%;
   margin-inline: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .logo {
@@ -110,7 +110,7 @@ a {
 
 .home {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("public/img/women.jpg");
+    url("public/img/women.webp");
 
   height: 100vh;
   background-repeat: no-repeat;
@@ -122,21 +122,9 @@ a {
   align-items: center;
 }
 
-/* .overlay__home {
-  width: 100%;
-
-  height: 100vh;
-  background-color: rgba(66, 75, 69, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-} */
-
 .home__title {
   color: #fff;
-  font-size: var(--h1-size);
-  font-weight: var(--bold-font);
+  font-weight: 700;
   text-align: center;
 }
 .home__description {
@@ -164,7 +152,6 @@ a {
   background-color: #000;
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.3);
-  grid-template-columns: repeat(12, 1fr);
 }
 .input:nth-child(1) {
   grid-column: span 4;
@@ -941,6 +928,9 @@ select {
   }
 }
 @media screen and (min-width: 576px) {
+  .home__title {
+    font-size: 32px;
+  }
   .trending__card-list {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1025,7 +1015,7 @@ select {
     height: 100vh;
     background: #ffffff;
     padding-block: 4rem;
-    z-index: 1000;
+    z-index: 100;
     transition: right 0.4s;
   }
   .overlay__nav {
@@ -1084,6 +1074,9 @@ select {
   }
 }
 @media screen and (min-width: 1150px) {
+  .home__form {
+    grid-template-columns: repeat(12, 1fr);
+  }
   .footer__data {
     padding-bottom: 5rem;
     grid-template-columns: repeat(4, 1fr);
